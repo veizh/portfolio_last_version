@@ -113,10 +113,9 @@ export default function Home() {
             <textarea type="text" name="message" required/>
           </div>
           <button type="submit" onClick={(e)=>{
-            e.preventDefault()
+            
             setTimeout(() => {
-            navigate.push("https://www.maxime-durville.fr/thankyou")
-              
+              navigate.push("https://www.maxime-durville.fr/thankyou")
             }, 1500);
           }}  >Envoyer</button>
         </form>
