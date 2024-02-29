@@ -20,7 +20,7 @@ const About =()=>{
                             <div className="description">
                                 Passionnée depuis toujours par le web et l&apos;informatique en général, j&apos;ai commencé en 2019 a faire des sites internets personnels.<br/><br/>
                                 Deux années plus tard j&apos;obtien un diplome d&apos;intégrateur web full-stack de niveau Bac+2.<br/><br/>
-                                Actuellement entrain de suivre une formation qui touche à sa fin dans le but d&apos;affiner mes compétences en ReactJs. J'aspire à rejoindre une entreprise qui pourra mettre mes compétences à profits et m'aidera à progresser.
+                                Actuellement entrain de suivre une formation qui touche à sa fin dans le but d&apos;affiner mes compétences en ReactJs. J&apos;aspire à rejoindre une entreprise qui pourra mettre mes compétences à profits et m&apos;aidera à progresser.
                             </div>
                             <div className="containerContact">
                                 <Link target="_blank" href="HTTPS://www.linkedin.com/in/maxime-durville"> <img src="lkd.svg" alt="navigation au profil linkedIn" /></Link>
