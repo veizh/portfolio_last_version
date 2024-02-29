@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.layoutContainer {
+  padding-top: 7vh;
+}
+.layoutContainer .backgroundSecond .first, .layoutContainer .backgroundSecond .second {
+  box-shadow: unset;
+}
+.layoutContainer .backgroundSecond::after {
+  content: "A propos";
+  font-size: 59px;
+  width: 100%;
+}
+.layoutContainer .backgroundSecond.Services::after {
+  content: "Services";
+}
+.layoutContainer .backgroundSecond.projet::after {
+  content: "Expériences";
+}
+.layoutContainer .waves {
+  width: 100%;
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+}/*# sourceMappingURL=layout.css.map */

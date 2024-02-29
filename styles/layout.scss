@@ -1,0 +1,36 @@
+@import './responsive';
+
+.layoutContainer{
+    padding-top: 7vh;
+    .backgroundSecond{
+
+        .first,.second{
+            box-shadow: unset ;
+        }
+        
+        &::after{
+            content:"A propos";
+            font-size: 59px;
+            width: 100%;
+        }
+        
+       
+        
+    }
+    .backgroundSecond.Services{
+        &::after{
+            content: "Services";
+        }
+    }
+    .backgroundSecond.projet{
+        &::after{
+            content: "Expériences";
+        }
+    }
+        .waves{
+            width: 100%;
+            position: absolute;
+            z-index: 6;
+            bottom: 0;
+        }
+}
