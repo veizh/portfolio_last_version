@@ -87,7 +87,7 @@ export default function Home() {
         <p>Envie de mettre en place un projet ? Besoin d&apos;informations supplémentaires ? Contactez-moi</p>
         <form action="https://formsubmit.co/b1746bc762ff65488f5934623a38038d"  method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
-          <input type="hidden" name="_next" value="./thankyou" />
+          <input type="hidden" name="_next" value="https://www.maxime-durville.fr/thankyou" />
           <div className="containerInput email">
             <label htmlFor="email">Adresse Email*</label>
             <input type="email" name="email"  required/>
