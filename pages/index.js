@@ -1,24 +1,35 @@
 import Head from "next/head"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Card } from "../components/card"
 import { NavBar } from "../components/navBar"
 import { Project } from "../components/Project"
 import { useRouter } from "next/router"
 
 const projects = [
+ 
   {
     source:"./projects/projet_ag.webp",
-    name:"Ag-WorldCup"
+    name:"Ag-WorldCup",
+    stack:["React | Scss | Node | JavaScript | mongodb"]
+  },
+  {
+    source:"./projects/music.png",
+    name:"MusicPlayer",
+    stack:["React | Scss | Node | JavaScript | electron"]
   },
   {
     source:"./projects/projet_kasa.webp",
-    name:"Kasa"
+    name:"Kasa",
+    stack:["React | Scss "]
+
   },
   {
     source:"./projects/xAdventure.webp",
     name:"xAdventure",
-    link:"https://studiecase.vercel.app/"
+    link:"https://studiecase.vercel.app/",
+    stack:["Next | Scss | JavaScript "]
+
   }
   
 ]
@@ -27,6 +38,11 @@ export default function Home() {
   const [array,setArray] = useState(Array.from("MAXIME DURVILLE"))
   const [opa,setOpa] = useState(false)
   const [modal,setModal] = useState(null)
+  const [mouseX,setMouseX] = useState(null)
+  const [mouseY,setMouseY] = useState(null)
+  const [datahover,setDatahover] = useState(null)
+  let ref = useRef()
+
   //
   //IL FAUT FAIRE LA LOGIQUE DE LA MODALE POURE AVOIR LES INFORMATIONS LORS DU CLICK SUR UN PROJET !
   
@@ -34,6 +50,27 @@ export default function Home() {
   
   //
   //
+  useEffect(()=>{
+    setTimeout(() => {
+      let tmp =  document.querySelectorAll('.subContainer')
+      tmp.forEach((e)=>{
+        e.addEventListener("mousemove",(event)=>{
+          setMouseX(event.x)
+          setMouseY(event.y)
+        })
+        e.addEventListener("mouseenter",()=>{
+          setDatahover(e.getAttribute('data-stack'))
+          ref.current.style.opacity=1
+
+        })
+        e.addEventListener("mouseleave",()=>{
+          ref.current.style.opacity=0
+
+        })
+      })
+    }, 500);
+   
+  },[])
   useEffect(()=>{
     const video = document.querySelector("video")
     video.playbackRate = 0.75
@@ -53,6 +90,7 @@ export default function Home() {
   })
   return (
     <>
+    <div className="dataOnMouse" style={{transform:`translate(calc(${mouseX+30}px),calc(${mouseY-30}px - 50%)`}} ref={ref}>{datahover}</div>
       <Head>
         <title>Maxime Durville</title>
         <meta name="description" content="Voici mon portfolio de développeur web, n&apos;hesitez pas a me contacter !" />
@@ -70,7 +108,7 @@ export default function Home() {
         
         <div className="slogan"><div className="container">Bienvenue sur mon portfolio ! <br/>Je suis <a> développeur full-stack, </a> J&apos;aprrécie devoir être créatif afin de trouver des solutions aussi viables que maintenables avec les outils que j&apos;ai à ma disposition.</div><Link href="./about" className="button">A propos de moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
-        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
+        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mov" type="video/mp4" /></video>
 
       </div>
       <div className="presentation">
@@ -82,7 +120,7 @@ export default function Home() {
       <section id="projets">
       <div  className="projectsContainer" >
         <h1>Mes Projets</h1>
-        {projects.map((e,i)=><Project key={i} source={e.source} name={e.name} />)}
+        {projects.map((e,i)=><Project key={i} source={e.source} stack={e.stack} name={e.name} />)}
       </div>
       </section>
       

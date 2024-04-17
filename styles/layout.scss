@@ -1,5 +1,18 @@
 @import './responsive';
+.dataOnMouse{
+    position: fixed;
+    z-index: 50;
+    width: auto;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #411755;
+    opacity: 0;
+    box-shadow: #15071b79 2px 2px 8px 2.5px;
+    transition: opacity 0.9s ease-in-out;
 
+}
 .layoutContainer{
     padding-top: 7vh;
     .backgroundSecond{
