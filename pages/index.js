@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           
           <div className="containerInput firstName">
-            <label htmlFor="firstName">Nom ou Marque*</label>
+            <label htmlFor="firstName">Nom*</label>
             <input type="text" name="firstName"  required/>
           </div>
           
