@@ -26,7 +26,14 @@ export default function Home() {
   const navigate = useRouter()
   const [array,setArray] = useState(Array.from("MAXIME DURVILLE"))
   const [opa,setOpa] = useState(false)
+  const [modal,setModal] = useState(null)
+  //
+  //IL FAUT FAIRE LA LOGIQUE DE LA MODALE POURE AVOIR LES INFORMATIONS LORS DU CLICK SUR UN PROJET !
   
+  //IL FAUT FAIRE LA LOGIQUE DE LA MODALE POURE AVOIR LES INFORMATIONS LORS DU CLICK SUR UN PROJET !
+  
+  //
+  //
   useEffect(()=>{
     const video = document.querySelector("video")
     video.playbackRate = 0.75
@@ -43,7 +50,6 @@ export default function Home() {
 
   useEffect(()=>{
     const canvas = document.querySelector(".deco");
-    console.log(canvas);
   })
   return (
     <>
@@ -69,7 +75,7 @@ export default function Home() {
       </div>
       <div className="presentation">
         <Card title="Database" content="Je construis des systèmes qui ont pour but d&apos;organiser et stocker les données tout en faisant en sorte que  les celles-ci soient exploitable de manière simple et efficace." source="./database.svg" />
-        <Card title="S.E.O" content="Je m&apos;occupe d'ameliorer le SEO des sites dans le but d'obtenir une meilleur visibilité. Faire des backlinks ou optimiser les perfomances font parti des outils que je peux utiliser." source="./SEO.svg" />
+        <Card title="S.E.O" content="Je m&apos;occupe d'ameliorer le SEO des sites dans le but d'obtenir une meilleur visibilité. Améliorer l'accessibilité ou optimiser les perfomances font parti des outils que je peux utiliser." source="./SEO.svg" />
         <Card title="Intégration" content="Je m&apos;applique à intégrer un site depuis un design donné. De la version mobile à la version desktop je mets un point d&apos;honneur à ce que l&apos;experience reste agréable pour l&apos;utilisateur. " source="./code.svg" />
 
       </div>
