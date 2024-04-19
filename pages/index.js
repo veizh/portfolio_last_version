@@ -9,28 +9,33 @@ import { useRouter } from "next/router"
 const projects = [
  
   {
+    source:"./projects/stock_AG.webp",
+    name:"StockAG",
+    stack:["React | Sass | Node | JavaScript | MongoDB"]
+  },
+  {
     source:"./projects/projet_ag.webp",
     name:"Ag-WorldCup",
-    stack:["React | Scss | Node | JavaScript | mongodb"]
-  },
-  {
-    source:"./projects/music.png",
-    name:"MusicPlayer",
-    stack:["React | Scss | Node | JavaScript | electron"]
-  },
-  {
-    source:"./projects/projet_kasa.webp",
-    name:"Kasa",
-    stack:["React | Scss "]
-
+    stack:["React | Sass | Node | JavaScript | MongoDB"]
   },
   {
     source:"./projects/xAdventure.webp",
     name:"xAdventure",
     link:"https://studiecase.vercel.app/",
-    stack:["Next | Scss | JavaScript "]
+    stack:["Next | Sass | JavaScript "]
 
-  }
+  },
+  {
+    source:"./projects/projet_kasa.webp",
+    name:"Kasa",
+    stack:["React | Sass "]
+
+  },
+  {
+    source:"./projects/music.png",
+    name:"MusicPlayer",
+    stack:["React | Sass | Node | JavaScript | ElectronJs"]
+  },
   
 ]
 export default function Home() {
@@ -68,7 +73,7 @@ export default function Home() {
 
         })
       })
-    }, 500);
+    }, 200);
    
   },[])
   useEffect(()=>{
@@ -85,9 +90,6 @@ export default function Home() {
     }, 10);
   },[])
 
-  useEffect(()=>{
-    const canvas = document.querySelector(".deco");
-  })
   return (
     <>
     <div className="dataOnMouse" style={{transform:`translate(calc(${mouseX+30}px),calc(${mouseY-30}px - 50%)`}} ref={ref}>{datahover}</div>
@@ -108,7 +110,7 @@ export default function Home() {
         
         <div className="slogan"><div className="container">Bienvenue sur mon portfolio ! <br/>Je suis <a> développeur full-stack, </a> J&apos;aprrécie devoir être créatif afin de trouver des solutions aussi viables que maintenables avec les outils que j&apos;ai à ma disposition.</div><Link href="./about" className="button">A propos de moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
-        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mov" type="video/mp4" /></video>
+        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mov" type="video/mov" /></video>
 
       </div>
       <div className="presentation">
