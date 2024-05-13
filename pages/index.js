@@ -110,7 +110,7 @@ export default function Home() {
         
         <div className="slogan"><div className="container">Bienvenue sur mon portfolio ! <br/>Je suis <a> développeur full-stack, </a> J&apos;aprrécie devoir être créatif afin de trouver des solutions aussi viables que maintenables avec les outils que j&apos;ai à ma disposition.</div><Link href="./about" className="button">A propos de moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
-        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mov" type="video/mov" /></video>
+        <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
       </div>
       <div className="presentation">
@@ -130,7 +130,7 @@ export default function Home() {
       
       <section className="contactContainer" >
         <h1>Contact</h1>
-        <p>Envie de mettre en place un projet ? Besoin d&apos;informations supplémentaires ? Contactez-moi</p>
+        <p>Envie de mettre en place un projet ? Besoin d&apos;informations complémentaires ? Contactez-moi</p>
         <form action="https://formsubmit.co/b1746bc762ff65488f5934623a38038d"  method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
           <input type="hidden" name="_next" value="https://www.maxime-durville.fr/thankyou" />
