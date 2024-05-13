@@ -14,9 +14,10 @@ const projects = [
     stack:["React | Sass | Node | JavaScript | MongoDB"]
   },
   {
-    source:"./projects/projet_ag.webp",
-    name:"Ag-WorldCup",
-    stack:["React | Sass | Node | JavaScript | MongoDB"]
+    source:"./projects/projet_kasa.webp",
+    name:"Kasa",
+    stack:["React | Sass "]
+
   },
   {
     source:"./projects/xAdventure.webp",
@@ -26,10 +27,9 @@ const projects = [
 
   },
   {
-    source:"./projects/projet_kasa.webp",
-    name:"Kasa",
-    stack:["React | Sass "]
-
+    source:"./projects/projet_ag.webp",
+    name:"Ag-WorldCup",
+    stack:["React | Sass | Node | JavaScript | MongoDB"]
   },
   {
     source:"./projects/music.png",
