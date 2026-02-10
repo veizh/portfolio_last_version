@@ -108,15 +108,15 @@ export default function Home() {
           })}
         </div>
         
-        <div className="slogan"><div className="container">Bienvenue sur mon portfolio ! <br/>Je suis <a> développeur full-stack, </a> J&apos;aprrécie devoir être créatif afin de trouver des solutions aussi viables que maintenables avec les outils que j&apos;ai à ma disposition.</div><Link href="./about" className="button">A propos de moi <img src="arrowWhite.svg"/></Link></div>
+        <div className="slogan"><div className="container">Bienvenue sur mon portfolio,<br/>Je suis <a> développeur full-stack, </a> J&apos;aprrécie devoir être créatif afin de trouver des solutions aussi viables que maintenables avec les outils que j&apos;ai à ma disposition.</div><Link href="./about" className="button">A propos de moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
       </div>
       <div className="presentation">
-        <Card title="Database" content="Je construis des systèmes qui ont pour but d&apos;organiser et stocker les données tout en faisant en sorte que  les celles-ci soient exploitable de manière simple et efficace." source="./database.svg" />
-        <Card title="S.E.O" content="Je m&apos;occupe d'ameliorer le SEO des sites dans le but d'obtenir une meilleur visibilité. Améliorer l'accessibilité ou optimiser les perfomances font parti des outils que je peux utiliser." source="./SEO.svg" />
-        <Card title="Intégration" content="Je m&apos;applique à intégrer un site depuis un design donné. De la version mobile à la version desktop je mets un point d&apos;honneur à ce que l&apos;experience reste agréable pour l&apos;utilisateur. " source="./code.svg" />
+        <Card title="Gestion de données" content="Je conçois des systèmes visant à organiser et stocker les données, tout en veillant à ce qu&apos;elles soient exploitables de manière simple, efficace et performante." source="./database.svg" />
+        <Card title="S.E.O" content="J&apos;améliore le SEO des sites afin d&apos;augmenter leur visibilité. L&apos;optimisation des performances et l&apos;amélioration de l&apos;accessibilité font partie des leviers que j&apos;utilise pour atteindre ces objectifs." source="./SEO.svg" />
+        <Card title="Intégration" content="Je veille à intégrer les designs avec rigueur, en respectant les bonnes pratiques du web. De la version mobile à la version desktop, je mets un point d&apos;honneur à garantir une expérience utilisateur fluide, cohérente et agréable." source="./code.svg" />
 
       </div>
       <section id="projets">
